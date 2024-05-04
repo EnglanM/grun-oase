@@ -1,21 +1,24 @@
 <template>
     <header>
         <div class="navbar">
-            <img
-                class="logo"
-                src="../../../public/images/gardening.png"
-                alt=""
-            />
+            <img class="logo" src="../../../public/images/logo.png" alt="" />
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="#S1">Home</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Testimony</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>
+
         <div class="content">
-            <h1>Welcome to My Vue App!</h1>
-            <p>Enjoy your stay!</p>
+            <div class="inner-content">
+                <h2>Willkommen in der</h2>
+                <h1>GRÜNE OASE</h1>
+            </div>
         </div>
     </header>
 </template>
@@ -26,11 +29,8 @@ export default {};
 
 <style scoped>
 header {
-    background-image: linear-gradient(
-            rgba(14, 91, 59, 0.5),
-            rgba(8, 34, 28, 0.5)
-        ),
-        url("../../../public/images/image1.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(8, 34, 28, 2)),
+        url("../../../public/images/image3.webp");
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -38,7 +38,7 @@ header {
     padding: 1rem;
 }
 .logo {
-    width: 90px;
+    width: 100px;
     cursor: pointer;
 }
 .navbar {
@@ -67,6 +67,7 @@ header {
 .navbar ul li a {
     text-decoration: none;
     color: white;
+    transition: 0.5s;
 }
 
 .navbar ul li a:hover {
@@ -74,13 +75,20 @@ header {
 }
 
 .content {
-    margin-top: 14%;
+    margin-top: 10%;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     height: 100%;
+}
+
+.inner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 
 .content h1 {
@@ -90,13 +98,64 @@ header {
     line-height: 85px;
 }
 
+.content h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: 200;
+    line-height: 85px;
+}
+
 .content p {
     font-size: 1.5rem;
 }
 
-@media (max-width: 768px) {
-    .navbar ul {
-        display: none;
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: flex;
+    }
+    ul {
+        position: absolute;
+        height: 100vh;
+        background-color: rgba(8, 34, 28, 0.5);
+        top: 80px;
+        right: -100%;
+        text-align: center;
+        transition: all 0.5s;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 20px;
+        padding-top: 60px;
+        backdrop-filter: blur(8px); /* Add this line */
+    }
+    navbar ul li {
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    navbar ul li a {
+        font-size: 20px;
+    }
+    a:hover,
+    a.active {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul {
+        right: 0;
     }
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
     <div class="service">
-        <h1 id="S2">Service 2</h1>
+        <h1 id="S5">Service 5</h1>
 
         <div class="service-1">
             <div class="image-container">
@@ -42,15 +42,15 @@ h1 {
     height: 100vh;
 }
 
-.image-container {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
 .service-image {
     width: 250px;
     display: flex;
     border-radius: 15px;
+}
+
+.info-content {
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .info-content p {

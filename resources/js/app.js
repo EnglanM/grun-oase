@@ -1,4 +1,5 @@
 import "./bootstrap";
+import "animate.css";
 
 import { createApp } from "vue/dist/vue.esm-bundler.js";
 import App from "./App.vue";
