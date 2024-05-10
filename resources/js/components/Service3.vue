@@ -28,9 +28,9 @@
 <script>
 export default {};
 </script>
-
 <style scoped>
 h1 {
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 
@@ -43,7 +43,7 @@ h1 {
 }
 
 .service-image {
-    width: 250px;
+    width: 550px;
     display: flex;
     border-radius: 15px;
 }
@@ -55,9 +55,46 @@ h1 {
 
 .info-content p {
     padding: 20px;
-    width: 250px;
-    background-color: #4d3b3a;
+    width: 550px;
+    background-color: #728c5c;
     border-radius: 15px;
     border: 1px solid black;
+}
+
+@media (min-width: 815px) {
+    .info-content p {
+        margin-right: 100px;
+    }
+
+    .service-image {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 810px) {
+    .service-image {
+        width: 450px;
+    }
+    .info-content p {
+        width: 450px;
+    }
+}
+
+@media (max-width: 640px) {
+    .service-image {
+        width: 350px;
+    }
+    .info-content p {
+        width: 350px;
+    }
+}
+@media (max-width: 484px) {
+    .service-image {
+        width: 250px;
+    }
+
+    .info-content p {
+        width: 250px;
+    }
 }
 </style>
