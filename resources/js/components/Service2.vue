@@ -2,24 +2,21 @@
     <div class="service">
         <h1 id="S2">Service 2</h1>
 
-        <div class="service-1">
-            <div class="image-container">
+        <div class="service-2">
+            <div class="image-container item1">
                 <img
-                    class="service-image"
+                    class="service-image animate__animated animate__animate__backInRight__delay-5s"
                     src="../../../public/images/service1.jpg"
                     alt=""
                 />
             </div>
 
-            <div class="info-content">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur.
-                </p>
+            <div class="item2"></div>
+
+            <div class="item3"></div>
+
+            <div class="info-content item4">
+                <p>Lorem ipsum dolor sit amet</p>
             </div>
         </div>
     </div>
@@ -34,12 +31,51 @@ h1 {
     margin-bottom: 50px;
 }
 
+.item2 {
+    background-image: url("../../../public/images/icon1.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.item3 {
+    background-image: url("../../../public/images/icon2.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.service-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+}
+
+.item1 {
+    grid-column: 2 / span 2;
+    grid-row: 1 / 2;
+}
+
+.item2 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.item3 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+.item4 {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
 .service {
     background-color: rgb(8, 34, 28);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(8, 34, 28, 2));
+
     color: white;
     text-align: center;
     padding: 1rem;
-    height: 100vh;
+    height: 75vh;
 }
 
 .image-container {
@@ -56,9 +92,11 @@ h1 {
 .info-content p {
     padding: 20px;
     width: 550px;
-    background-color: #728c5c;
+    background-color: transparent;
+    font-size: 25px;
     border-radius: 15px;
-    border: 1px solid black;
+    z-index: 2;
+    align-content: center;
 }
 
 @media (min-width: 815px) {

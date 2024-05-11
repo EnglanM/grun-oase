@@ -4,41 +4,23 @@
             <div class="container">
                 <div class="row">
                     <div class="footer-col">
-                        <h4>company</h4>
-                        <ul>
-                            <li><a href="#">about us</a></li>
-                            <li><a href="#">our services</a></li>
-                            <li><a href="#">privacy policy</a></li>
-                            <li><a href="#">affiliate program</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>get help</h4>
-                        <ul>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">shipping</a></li>
-                            <li><a href="#">returns</a></li>
-                            <li><a href="#">order status</a></li>
-                            <li><a href="#">payment options</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>online shop</h4>
-                        <ul>
-                            <li><a href="#">watch</a></li>
-                            <li><a href="#">bag</a></li>
-                            <li><a href="#">shoes</a></li>
-                            <li><a href="#">dress</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>follow us</h4>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
+                        <h4>contact</h4>
+                        <form action="">
+                            <input
+                                type="text"
+                                name="text"
+                                class="text-input"
+                                placeholder="Your email address..."
+                            />
+                            <textarea
+                                name="message"
+                                class="text-input"
+                                placeholder="Message..."
+                            ></textarea>
+                            <button type="submit" class="btn btn-primary">
+                                Send
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -63,7 +45,7 @@ ul {
     list-style: none;
 }
 .footer {
-    background-color: #24262b;
+    background-color: #446c3c;
     padding: 70px 0;
 }
 .footer-col {
@@ -121,7 +103,11 @@ ul {
     color: #24262b;
     background-color: #ffffff;
 }
-
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 /*responsive*/
 @media (max-width: 767px) {
     .footer-col {
