@@ -27,7 +27,7 @@
                 <li><a href="#S7">Bewässerungsanlagen</a></li>
                 <li><a href="#S8">Neupflanzungen und Ersatzpflanzungen</a></li>
                 <li><a href="#S9">Baumfällungen und Grundstücksrodungen</a></li>
-                <li><a href="#S10">Mauren</a></li>
+                <li><a href="#S10">Mauern</a></li>
                 <li><a href="#S11">Erdarbeiten und Baggerarbeiten</a></li>
                 <li><a href="#S12">Rollrasen</a></li>
                 <li><a href="#S13">Natursteinarbeiten</a></li>

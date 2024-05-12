@@ -1,12 +1,12 @@
 <template>
     <div class="service">
-        <h1 id="S10">Mauren</h1>
+        <h1 id="S10">Mauern</h1>
 
         <div class="service-2">
             <div class="image-container item1">
                 <img
                     class="service-image animate__animated animate__animate__backInRight__delay-5s"
-                    src="../../../public/images/service1.jpg"
+                    src="../../../public/images/land10.jpg"
                     alt=""
                 />
             </div>

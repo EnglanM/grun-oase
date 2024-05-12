@@ -6,7 +6,7 @@
             <div class="image-container item1">
                 <img
                     class="service-image animate__animated animate__animate__backInRight__delay-5s"
-                    src="../../../public/images/service1.jpg"
+                    src="../../../public/images/land11.jpg"
                     alt=""
                 />
             </div>
