@@ -1,12 +1,12 @@
 <template>
     <div class="service">
-        <h1 id="S3">Häckselarbeiten mit Kran / Hackguterzeugung / Biomasse</h1>
+        <h1 id="S13">Natursteinarbeiten</h1>
 
-        <div class="service-3">
+        <div class="service-5">
             <div class="image-container item1">
                 <img
                     class="service-image animate__animated animate__animate__backInRight__delay-5s"
-                    src="../../../public/images/land3.webp"
+                    src="../../../public/images/service1.jpg"
                     alt=""
                 />
             </div>
@@ -47,7 +47,7 @@ h1 {
     background-position: center;
 }
 
-.service-3 {
+.service-5 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;

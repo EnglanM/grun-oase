@@ -1,12 +1,12 @@
 <template>
     <div class="service">
-        <h1 id="S3">Häckselarbeiten mit Kran / Hackguterzeugung / Biomasse</h1>
+        <h1 id="S14">Mulchen von Großflächen / Forstmulchen</h1>
 
-        <div class="service-3">
+        <div class="service-2">
             <div class="image-container item1">
                 <img
                     class="service-image animate__animated animate__animate__backInRight__delay-5s"
-                    src="../../../public/images/land3.webp"
+                    src="../../../public/images/service1.jpg"
                     alt=""
                 />
             </div>
@@ -36,7 +36,7 @@ h1 {
 }
 
 .item2 {
-    background-image: url("../../../public/images/icon1.png");
+    background-image: url("../../../public/images/icon3.png");
     background-size: cover;
     background-position: center;
 }
@@ -47,7 +47,7 @@ h1 {
     background-position: center;
 }
 
-.service-3 {
+.service-2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -55,43 +55,41 @@ h1 {
 }
 
 .item1 {
-    grid-column: 1 / span 2;
+    grid-column: 2 / span 2;
     grid-row: 1 / 2;
 }
 
 .item2 {
-    grid-column: 3 / 4;
+    grid-column: 1 / 2;
     grid-row: 1 / 2;
 }
 
 .item3 {
-    grid-column: 1 / 2;
+    grid-column: 3 / 4;
     grid-row: 2 / 3;
 }
 .item4 {
-    grid-column: 2 / 4;
+    grid-column: 1 / 3;
     grid-row: 2 / 3;
 }
 .service {
     background-color: rgb(8, 34, 28);
-    background-image: linear-gradient(rgba(8, 34, 28, 2), rgba(0, 0, 0, 0.8));
-    background-size: cover;
-    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(8, 34, 28, 2));
     color: white;
     text-align: center;
     padding: 1rem;
     padding-bottom: 50px;
 }
 
+.image-container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 .service-image {
     width: 550px;
     display: flex;
     border-radius: 15px;
-}
-
-.info-content {
-    display: flex;
-    flex-direction: row-reverse;
 }
 
 .info-content p {
@@ -107,11 +105,11 @@ h1 {
 
 @media (min-width: 815px) {
     .info-content p {
-        margin-right: 100px;
+        margin-left: 50px;
     }
 
     .service-image {
-        margin-left: 50px;
+        margin-right: 100px;
     }
 }
 
@@ -119,6 +117,7 @@ h1 {
     .service-image {
         width: 450px;
     }
+
     .info-content p {
         width: 450px;
     }
@@ -128,6 +127,7 @@ h1 {
     .service-image {
         width: 350px;
     }
+
     .info-content p {
         width: 350px;
     }

@@ -1,12 +1,12 @@
 <template>
     <div class="service">
-        <h1 id="S1">Service 1</h1>
+        <h1 id="S1">Landschaftsplanung / Landschaftsbau</h1>
 
         <div class="service-1">
             <div class="image-container item1">
                 <img
                     class="service-image animate__animated animate__animate__backInRight__delay-5s"
-                    src="../../../public/images/service1.jpg"
+                    src="../../../public/images/land1.jpg"
                     alt=""
                 />
             </div>
@@ -30,16 +30,19 @@ export default {};
 h1 {
     margin-top: 50px;
     margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: 550;
+    color: white;
 }
 
 .item2 {
-    background-image: url("../../../public/images/icon1.png");
+    background-image: url("../../../public/images/icon3.png");
     background-size: cover;
     background-position: center;
 }
 
 .item3 {
-    background-image: url("../../../public/images/icon2.png");
+    background-image: url("../../../public/images/icon4.png");
     background-size: cover;
     background-position: center;
 }
@@ -77,7 +80,7 @@ h1 {
     color: white;
     text-align: center;
     padding: 1rem;
-    height: 75vh;
+    padding-bottom: 100px;
 }
 
 .service-image {
@@ -99,6 +102,7 @@ h1 {
     border-radius: 15px;
     z-index: 2;
     align-content: center;
+    color: #5d9c45;
 }
 
 @media (min-width: 815px) {

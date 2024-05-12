@@ -1,12 +1,12 @@
 <template>
     <div class="service">
-        <h1 id="S5">Service 5</h1>
+        <h1 id="S5">Zaunbau</h1>
 
         <div class="service-5">
             <div class="image-container item1">
                 <img
                     class="service-image animate__animated animate__animate__backInRight__delay-5s"
-                    src="../../../public/images/service1.jpg"
+                    src="../../../public/images/land5.jpeg"
                     alt=""
                 />
             </div>
@@ -30,6 +30,9 @@ export default {};
 h1 {
     margin-top: 50px;
     margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: 550;
+    color: white;
 }
 
 .item2 {
@@ -77,7 +80,7 @@ h1 {
     color: white;
     text-align: center;
     padding: 1rem;
-    height: 75vh;
+    padding-bottom: 50px;
 }
 
 .service-image {
@@ -99,6 +102,7 @@ h1 {
     border-radius: 15px;
     z-index: 2;
     align-content: center;
+    color: #5d9c45;
 }
 
 @media (min-width: 815px) {

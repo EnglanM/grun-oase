@@ -13,12 +13,29 @@
                 <i class="fa fa-bars" aria-hidden="true"></i>
             </label>
             <ul v-show="overlayVisibility" @click="closeOverlay">
-                <li><a href="#S1">Service 1</a></li>
-                <li><a href="#S2">Service 2</a></li>
-                <li><a href="#S3">Service 3</a></li>
-                <li><a href="#S4">Service 4</a></li>
-                <li><a href="#S5">Service 5</a></li>
-                <li><a href="#C">Contact</a></li>
+                <li><a href="#S1">Landschaftsplanung / Landschaftsbau</a></li>
+                <li><a href="#S2">Gartenbau und Gartenplanung</a></li>
+                <li>
+                    <a href="#S3"
+                        >Häckselarbeiten mit Kran / Hackguterzeugung /
+                        Biomasse</a
+                    >
+                </li>
+                <li><a href="#S4">Pflasterarbeiten</a></li>
+                <li><a href="#S5">Zaunbau</a></li>
+                <li><a href="#S6">Terrassenbau</a></li>
+                <li><a href="#S7">Bewässerungsanlagen</a></li>
+                <li><a href="#S8">Neupflanzungen und Ersatzpflanzungen</a></li>
+                <li><a href="#S9">Baumfällungen und Grundstücksrodungen</a></li>
+                <li><a href="#S10">Mauren</a></li>
+                <li><a href="#S11">Erdarbeiten und Baggerarbeiten</a></li>
+                <li><a href="#S12">Rollrasen</a></li>
+                <li><a href="#S13">Natursteinarbeiten</a></li>
+                <li>
+                    <a href="#S14">Mulchen von Großflächen / Forstmulchen</a>
+                </li>
+                <li><a href="#S15"> Treppenbau</a></li>
+                <li><a href="#C">Kontakt</a></li>
             </ul>
         </div>
         <!-- End Sidebar -->

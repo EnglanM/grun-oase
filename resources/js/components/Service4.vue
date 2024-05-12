@@ -1,17 +1,21 @@
 <template>
     <div class="service">
-        <h1 id="S4">Service 4</h1>
+        <h1 id="S4">Pflasterarbeiten</h1>
 
-        <div class="service-1">
-            <div class="image-container">
+        <div class="service-2">
+            <div class="image-container item1">
                 <img
-                    class="service-image"
-                    src="../../../public/images/service1.jpg"
+                    class="service-image animate__animated animate__animate__backInRight__delay-5s"
+                    src="../../../public/images/land4.jpg"
                     alt=""
                 />
             </div>
 
-            <div class="info-content">
+            <div class="item2"></div>
+
+            <div class="item3"></div>
+
+            <div class="info-content item4">
                 <p>Lorem ipsum dolor sit amet</p>
             </div>
         </div>
@@ -24,11 +28,15 @@ export default {};
 
 <style scoped>
 h1 {
+    margin-top: 50px;
     margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: 550;
+    color: white;
 }
 
 .item2 {
-    background-image: url("../../../public/images/icon1.png");
+    background-image: url("../../../public/images/icon3.png");
     background-size: cover;
     background-position: center;
 }
@@ -67,11 +75,10 @@ h1 {
 .service {
     background-color: rgb(8, 34, 28);
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(8, 34, 28, 2));
-
     color: white;
     text-align: center;
     padding: 1rem;
-    height: 75vh;
+    padding-bottom: 50px;
 }
 
 .image-container {
@@ -93,6 +100,7 @@ h1 {
     border-radius: 15px;
     z-index: 2;
     align-content: center;
+    color: #5d9c45;
 }
 
 @media (min-width: 815px) {
