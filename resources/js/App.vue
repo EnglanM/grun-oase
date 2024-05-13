@@ -1,21 +1,23 @@
 <template>
     <div>
         <Header />
-        <Service1 />
-        <Service2 />
-        <Service3 />
-        <Service4 />
-        <Service5 />
-        <Service6 />
-        <Service7 />
-        <Service8 />
-        <Service9 />
-        <Service10 />
-        <Service11 />
-        <Service12 />
-        <Service13 />
-        <Service14 />
-        <Service15 />
+        <div class="services">
+            <Service1 />
+            <Service2 />
+            <Service3 />
+            <Service4 />
+            <Service5 />
+            <Service6 />
+            <Service7 />
+            <Service8 />
+            <Service9 />
+            <Service10 />
+            <Service11 />
+            <Service12 />
+            <Service13 />
+            <Service14 />
+            <Service15 />
+        </div>
         <Contact />
     </div>
 </template>
@@ -63,5 +65,20 @@ export default {
 </script>
 
 <style scoped>
-/* Add your custom styles here */
+@media screen and (min-width: 1320px) {
+    .services {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    }
+}
+
+/*
+@media screen and (min-width: 900px) {
+    .services {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    }
+}*/
 </style>

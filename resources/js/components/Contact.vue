@@ -5,21 +5,20 @@
                 <div class="row">
                     <div class="footer-col">
                         <h4>contact</h4>
-                        <form action="">
+                        <form @submit.prevent="submitForm">
+                            <label for="email">Email</label>
                             <input
-                                type="text"
-                                name="text"
-                                class="text-input"
-                                placeholder="Your email address..."
+                                type="email"
+                                id="email"
+                                v-model="fields.email"
                             />
+                            <br />
+                            <label for="message">Message</label>
                             <textarea
-                                name="message"
-                                class="text-input"
-                                placeholder="Message..."
+                                id="message"
+                                v-model="fields.message"
                             ></textarea>
-                            <button type="submit" class="btn btn-primary">
-                                Send
-                            </button>
+                            <input type="submit" value="Submit" />
                         </form>
                     </div>
                 </div>
@@ -27,6 +26,45 @@
         </footer>
     </div>
 </template>
+
+<script>
+import { defineComponent } from "vue";
+import axios from "axios";
+
+export default defineComponent({
+    data() {
+        return {
+            fields: {
+                email: "",
+                message: "",
+            },
+            errors: {},
+        };
+    },
+
+    methods: {
+        submitForm() {
+            axios
+                .post("/api/contacts", this.fields)
+                .then(() => {
+                    console.log("Message sent");
+                    // this.clearForm();
+                })
+                .catch((error) => {
+                    console.log(error.response); // Log the entire response object for debugging
+                    this.errors = error.response.data.errors;
+                    console.log(error);
+                });
+        },
+
+        clearForm() {
+            this.fields.email = "";
+            this.fields.message = "";
+            this.errors = {};
+        },
+    },
+});
+</script>
 
 <style scoped>
 .contact {
@@ -65,48 +103,42 @@ ul {
     position: absolute;
     left: 0;
     bottom: -10px;
-    background-color: #e91e63;
+    background-color: #873e23;
     height: 2px;
     box-sizing: border-box;
     width: 50px;
 }
-.footer-col ul li:not(:last-child) {
-    margin-bottom: 10px;
-}
-.footer-col ul li a {
-    font-size: 16px;
-    text-transform: capitalize;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 300;
-    color: #bbbbbb;
-    display: block;
-    transition: all 0.3s ease;
-}
-.footer-col ul li a:hover {
-    color: #ffffff;
-    padding-left: 8px;
-}
-.footer-col .social-links a {
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    background-color: rgba(255, 255, 255, 0.2);
-    margin: 0 10px 10px 0;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    color: #ffffff;
-    transition: all 0.5s ease;
-}
-.footer-col .social-links a:hover {
-    color: #24262b;
-    background-color: #ffffff;
-}
+
 form {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+}
+
+textarea {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    height: 100px;
+}
+
+button {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color: #873e23;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
 }
 /*responsive*/
 @media (max-width: 767px) {

@@ -16,7 +16,10 @@
             <div class="item3"></div>
 
             <div class="info-content item4">
-                <p>Lorem ipsum dolor sit amet</p>
+                <p>
+                    Der professionelle Zaunbau verlieh dem Grundstück Sicherheit
+                    und Eleganz.
+                </p>
             </div>
         </div>
     </div>
@@ -98,7 +101,7 @@ h1 {
     padding: 20px;
     width: 550px;
     background-color: transparent;
-    font-size: 25px;
+    font-size: 20px;
     border-radius: 15px;
     z-index: 2;
     align-content: center;
@@ -106,12 +109,14 @@ h1 {
 }
 
 @media (min-width: 815px) {
-    .info-content p {
-        margin-right: 100px;
-    }
-
     .service-image {
-        margin-left: 50px;
+        width: 300px;
+    }
+    .service {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.8),
+            rgba(8, 34, 28, 2)
+        );
     }
 }
 

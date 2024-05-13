@@ -16,7 +16,10 @@
             <div class="item3"></div>
 
             <div class="info-content item4">
-                <p>Lorem ipsum dolor sit amet</p>
+                <p>
+                    Der hochwertige Rollrasen verwandelte den Garten sofort in
+                    eine grüne Oase.
+                </p>
             </div>
         </div>
     </div>
@@ -94,9 +97,8 @@ h1 {
 
 .info-content p {
     padding: 20px;
-    width: 550px;
     background-color: transparent;
-    font-size: 25px;
+    font-size: 20px;
     border-radius: 15px;
     z-index: 2;
     align-content: center;
@@ -104,12 +106,26 @@ h1 {
 }
 
 @media (min-width: 815px) {
-    .info-content p {
-        margin-left: 50px;
+    .service-image {
+        width: 300px;
+    }
+    .item1 {
+        grid-column: 1 / span 2;
+        grid-row: 1 / 2;
     }
 
-    .service-image {
-        margin-right: 100px;
+    .item2 {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+
+    .item3 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    .item4 {
+        grid-column: 2 / 4;
+        grid-row: 2 / 3;
     }
 }
 

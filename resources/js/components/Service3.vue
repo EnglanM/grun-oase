@@ -16,7 +16,7 @@
             <div class="item3"></div>
 
             <div class="info-content item4">
-                <p>Lorem ipsum dolor sit amet</p>
+                <p>Revolutionieren Sie Ihren Garten</p>
             </div>
         </div>
     </div>
@@ -98,7 +98,7 @@ h1 {
     padding: 20px;
     width: 550px;
     background-color: transparent;
-    font-size: 25px;
+    font-size: 20px;
     border-radius: 15px;
     z-index: 2;
     align-content: center;
@@ -106,21 +106,8 @@ h1 {
 }
 
 @media (min-width: 815px) {
-    .info-content p {
-        margin-right: 100px;
-    }
-
     .service-image {
-        margin-left: 50px;
-    }
-}
-
-@media (max-width: 810px) {
-    .service-image {
-        width: 450px;
-    }
-    .info-content p {
-        width: 450px;
+        width: 300px;
     }
 }
 
