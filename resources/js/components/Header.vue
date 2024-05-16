@@ -1,6 +1,6 @@
 <template>
-    <header>
-        <!-- Sidebar -->
+    <!-- <header>
+        Sidebar
         <div class="navbar">
             <img class="logo" src="../../../public/images/logo.png" alt="" />
             <input
@@ -13,7 +13,7 @@
                 <i class="fa fa-bars" aria-hidden="true"></i>
             </label>
             <ul v-show="overlayVisibility" @click="closeOverlay">
-                <li><a href="#S1">Landschaftsplanung / Landschaftsbau</a></li>
+                <a href="#S1">Landschaftsplanung / Landschaftsbau</a></li>
                 <li><a href="#S2">Gartenbau und Gartenplanung</a></li>
                 <li>
                     <a href="#S3"
@@ -38,16 +38,97 @@
                 <li><a href="#C">Kontakt</a></li>
             </ul>
         </div>
-        <!-- End Sidebar -->
 
-        <!-- Main Content -->
         <div class="content">
             <div class="inner-content">
                 <h2>Willkommen in der</h2>
                 <h1>GRÜNE OASE</h1>
             </div>
         </div>
-        <!-- End Main Content -->
+    </header> -->
+
+    <header>
+        <nav>
+            <input type="checkbox" id="sidebar-active" />
+            <label for="sidebar-active" class="open-sidebar-button">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="32"
+                    viewBox="0 -960 960 960"
+                    width="32"
+                >
+                    <path
+                        d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+                    />
+                </svg>
+            </label>
+            <label id="overlay" for="sidebar-active"></label>
+            <div class="links-container">
+                <label for="sidebar-active" class="close-sidebar-button">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="32"
+                        viewBox="0 -960 960 960"
+                        width="32"
+                    >
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                        />
+                    </svg>
+                </label>
+
+                <a class="home-link" href="index.html">
+                    <img
+                        class="logo"
+                        src="../../../public/images/logo.png"
+                        alt=""
+                /></a>
+
+                <div class="dropdown" @click="toggleDropdown">
+                    <span class="dropbtn">Services</span>
+                    <div class="dropdown-content" v-if="dropdownVisible">
+                        <a href="#S1">Landschaftsplanung / Landschaftsbau</a>
+                        <a href="#S2">Gartenbau und Gartenplanung</a>
+
+                        <a href="#S3"
+                            >Häckselarbeiten mit Kran / Hackguterzeugung /
+                            Biomasse</a
+                        >
+
+                        <a href="#S4">Pflasterarbeiten</a>
+                        <a href="#S5">Zaunbau</a>
+                        <a href="#S6">Terrassenbau</a>
+                        <a href="#S7">Bewässerungsanlagen</a>
+
+                        <a href="#S8">Neupflanzungen und Ersatzpflanzungen</a>
+
+                        <a href="#S9">Baumfällungen und Grundstücksrodungen</a>
+
+                        <a href="#S10">Mauern</a>
+
+                        <a href="#S11">Erdarbeiten und Baggerarbeiten</a>
+
+                        <a href="#S12">Rollrasen</a>
+                        <a href="#S13">Natursteinarbeiten</a>
+
+                        <a href="#S14"
+                            >Mulchen von Großflächen / Forstmulchen</a
+                        >
+
+                        <a href="#S15"> Treppenbau</a>
+                    </div>
+                </div>
+                <a href="about.html">Testimonials</a>
+                <a href="#C">Kontakt</a>
+            </div>
+        </nav>
+
+        <div class="content">
+            <div class="inner-content">
+                <h2>Willkommen in der</h2>
+                <h1>GRÜNE OASE</h1>
+            </div>
+        </div>
     </header>
 </template>
 
@@ -56,11 +137,15 @@ export default {
     data() {
         return {
             overlayVisibility: false,
+            dropdownVisible: false,
         };
     },
     methods: {
         closeOverlay() {
             this.overlayVisibility = false;
+        },
+        toggleDropdown() {
+            this.dropdownVisible = !this.dropdownVisible;
         },
     },
 };
@@ -79,38 +164,6 @@ header {
 .logo {
     width: 100px;
     cursor: pointer;
-}
-.navbar {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5rem;
-}
-
-.navbar ul {
-    list-style: none;
-    width: 100%;
-    text-align: right;
-    padding-right: 60px;
-}
-
-.navbar ul li {
-    display: inline;
-    margin-left: 20px;
-    font-size: 1.2rem;
-    color: white;
-    cursor: pointer;
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    color: white;
-    transition: 0.5s;
-}
-
-.navbar ul li a:hover {
-    color: #af8585;
 }
 
 .content {
@@ -149,54 +202,113 @@ header {
     font-size: 1.5rem;
 }
 
-.checkbtn {
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-#check {
-    display: none;
+.dropdown {
+    position: relative;
 }
 
-@media (max-width: 858px) {
-    .checkbtn {
-        display: flex;
-    }
-    ul {
-        position: absolute;
-        height: 100vh;
-        width: 100%;
-        background-color: rgba(8, 34, 28, 0.5);
-        top: 80px;
-        right: -100%;
-        text-align: center;
-        transition: all 0.5s;
-        display: flex;
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position below the dropdown button */
+    left: 0;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.dropbtn:hover + .dropdown-content,
+.dropdown-content:hover {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-content a:hover {
+    background-color: #f2f2f2;
+}
+
+nav {
+    height: 60px;
+    background-color: var(--color-1);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+}
+.links-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+nav a {
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+}
+nav a:hover {
+    background-color: var(--accent-color);
+}
+nav .home-link {
+    margin-right: auto;
+}
+nav svg {
+    fill: var(--text-color);
+}
+#sidebar-active {
+    display: none;
+}
+.open-sidebar-button,
+.close-sidebar-button {
+    display: none;
+}
+@media (max-width: 450px) {
+    .links-container {
         flex-direction: column;
-        text-align: center;
-        align-items: center;
-        gap: 20px;
-        padding-top: 60px;
-        backdrop-filter: blur(8px); /* Add this line */
+        align-items: flex-start;
+
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        width: 300px;
+
+        background-color: black;
+        box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+        transition: 0.75s ease-out;
     }
-    navbar ul li {
-        margin: 50px 0;
-        line-height: 30px;
+    nav a {
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;
     }
-    navbar ul li a {
-        font-size: 20px;
+    .open-sidebar-button,
+    .close-sidebar-button {
+        padding: 20px;
+        display: block;
     }
-    a:hover,
-    a.active {
-        background: none;
-        color: #0082e6;
-    }
-    #check:checked ~ ul {
+    #sidebar-active:checked ~ .links-container {
         right: 0;
+    }
+    #sidebar-active:checked ~ #overlay {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
     }
 }
 </style>

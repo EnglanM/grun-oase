@@ -1,0 +1,123 @@
+{
+  "public/images/icon1.png": {
+    "file": "assets/icon1-YHq-DjCl.png",
+    "src": "public/images/icon1.png"
+  },
+  "public/images/icon2.png": {
+    "file": "assets/icon2-BJwZY1zK.png",
+    "src": "public/images/icon2.png"
+  },
+  "public/images/icon3.png": {
+    "file": "assets/icon3-DB62KuH5.png",
+    "src": "public/images/icon3.png"
+  },
+  "public/images/icon4.png": {
+    "file": "assets/icon4-Bjb4KS6q.png",
+    "src": "public/images/icon4.png"
+  },
+  "public/images/image3.webp": {
+    "file": "assets/image3-Dojv0NyR.webp",
+    "src": "public/images/image3.webp"
+  },
+  "public/images/land1.jpg": {
+    "file": "assets/land1-lapv6Jdo.jpg",
+    "src": "public/images/land1.jpg"
+  },
+  "public/images/land10.jpg": {
+    "file": "assets/land10-0rq5hVLc.jpg",
+    "src": "public/images/land10.jpg"
+  },
+  "public/images/land11.jpg": {
+    "file": "assets/land11-CvbxzmRB.jpg",
+    "src": "public/images/land11.jpg"
+  },
+  "public/images/land12.jpg": {
+    "file": "assets/land12-DBynDzNR.jpg",
+    "src": "public/images/land12.jpg"
+  },
+  "public/images/land13.jpeg": {
+    "file": "assets/land13-C1DfE9DZ.jpeg",
+    "src": "public/images/land13.jpeg"
+  },
+  "public/images/land14.jpg": {
+    "file": "assets/land14-C5IrJXZ3.jpg",
+    "src": "public/images/land14.jpg"
+  },
+  "public/images/land15.webp": {
+    "file": "assets/land15-Ctbg8qlW.webp",
+    "src": "public/images/land15.webp"
+  },
+  "public/images/land2.jpeg": {
+    "file": "assets/land2-Cc9m3f2B.jpeg",
+    "src": "public/images/land2.jpeg"
+  },
+  "public/images/land3.webp": {
+    "file": "assets/land3-Dgde3C1p.webp",
+    "src": "public/images/land3.webp"
+  },
+  "public/images/land4.jpg": {
+    "file": "assets/land4-IKxUei6h.jpg",
+    "src": "public/images/land4.jpg"
+  },
+  "public/images/land5.jpeg": {
+    "file": "assets/land5-DNPF7ewy.jpeg",
+    "src": "public/images/land5.jpeg"
+  },
+  "public/images/land6.jpg": {
+    "file": "assets/land6-CGLrQQtW.jpg",
+    "src": "public/images/land6.jpg"
+  },
+  "public/images/land7.jpeg": {
+    "file": "assets/land7-BMbJLQyT.jpeg",
+    "src": "public/images/land7.jpeg"
+  },
+  "public/images/land8.jpg": {
+    "file": "assets/land8-DWvZxJss.jpg",
+    "src": "public/images/land8.jpg"
+  },
+  "public/images/land9.jpeg": {
+    "file": "assets/land9-CIJTBAkK.jpeg",
+    "src": "public/images/land9.jpeg"
+  },
+  "public/images/logo.png": {
+    "file": "assets/logo-Dujv7uX4.png",
+    "src": "public/images/logo.png"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-C66Hb__W.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-C8kob8M7.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "css": [
+      "assets/app-BB7Rsl0-.css"
+    ],
+    "assets": [
+      "assets/logo-Dujv7uX4.png",
+      "assets/land1-lapv6Jdo.jpg",
+      "assets/land2-Cc9m3f2B.jpeg",
+      "assets/land3-Dgde3C1p.webp",
+      "assets/land4-IKxUei6h.jpg",
+      "assets/land5-DNPF7ewy.jpeg",
+      "assets/land6-CGLrQQtW.jpg",
+      "assets/land7-BMbJLQyT.jpeg",
+      "assets/land8-DWvZxJss.jpg",
+      "assets/land9-CIJTBAkK.jpeg",
+      "assets/land10-0rq5hVLc.jpg",
+      "assets/land11-CvbxzmRB.jpg",
+      "assets/land12-DBynDzNR.jpg",
+      "assets/land13-C1DfE9DZ.jpeg",
+      "assets/land14-C5IrJXZ3.jpg",
+      "assets/land15-Ctbg8qlW.webp",
+      "assets/image3-Dojv0NyR.webp",
+      "assets/icon3-DB62KuH5.png",
+      "assets/icon4-Bjb4KS6q.png",
+      "assets/icon1-YHq-DjCl.png",
+      "assets/icon2-BJwZY1zK.png"
+    ]
+  }
+}
